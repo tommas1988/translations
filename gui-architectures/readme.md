@@ -72,3 +72,10 @@
 * 表单观察控件并有对所关注事件做出反应的处理函数
 * 简单的数据编辑可以通过数据绑定来处理
 * 复杂的变动通过表单的事件处理函数来实现
+
+## Model View Controller
+可能在`UI`开发中被引用最多的模式就是`Model View Controller`(`MVC`)，也是被误引最多的。我已经记不清多少次一些被描述为`MVC`的东西，最后被证明跟它一点关系也没有。坦率的说，造成这个现象的原因是部分经典的`MVC`已经不太适合现在的富客户端开发。但是现在我们要看一看它的(`MVC`)起源。
+
+在调查`MVC`时，我们要了解这是认真考虑解决各种级别的`UI`工作的第一次尝试。用户界面在70年代并不常见。我刚刚讨论的`Forms and Controls`模式出现在`MVC`之后。我先讨论它，是因为它更简单，而不是以一个合理的顺序。再一次，我将使用评估的例子来讨论`Smalltalk 80's MVC`。注意，我没有完全遵照`Smalltalk 80`实际的细节来实现这个例子，因为它(`Smalltalk 80`)是一个黑白的系统。
+
+`MVC`的核心，也是对后续框架影响最多的思想是我所成为的[Separated Presentation](https://martinfowler.com/eaaDev/SeparatedPresentation.html)。[Separated Presentation](https://martinfowler.com/eaaDev/SeparatedPresentation.html)思想的背后是要有一个对领域对象（）
