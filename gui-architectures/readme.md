@@ -78,4 +78,7 @@
 
 在调查`MVC`时，我们要了解这是认真考虑解决各种级别的`UI`工作的第一次尝试。用户界面在70年代并不常见。我刚刚讨论的`Forms and Controls`模式出现在`MVC`之后。我先讨论它，是因为它更简单，而不是以一个合理的顺序。再一次，我将使用评估的例子来讨论`Smalltalk 80's MVC`。注意，我没有完全遵照`Smalltalk 80`实际的细节来实现这个例子，因为它(`Smalltalk 80`)是一个黑白的系统。
 
-`MVC`的核心，也是对后续框架影响最多的思想是我所成为的[Separated Presentation](https://martinfowler.com/eaaDev/SeparatedPresentation.html)。[Separated Presentation](https://martinfowler.com/eaaDev/SeparatedPresentation.html)思想的背后是要有一个对领域对象（）
+`MVC`的核心，也是对后续框架影响最多的思想是我所成为的[Separated Presentation](https://martinfowler.com/eaaDev/SeparatedPresentation.html)。[Separated Presentation](https://martinfowler.com/eaaDev/SeparatedPresentation.html)思想的背后是对领域对象（对现实世界感知建模）和表现对象（屏幕上可见的`GUI`元素）有一个清晰的分割。领域对象应该是完全独立的，与表现无关。同时它们也应该支持多种表现形式（可能是同时的）。这（支持多种表现形式）是`Unix`文化中的重要部分，并且至今存在：运行许多应用既有图形界面又有命令行接口。
+
+在`MVC`中，领域元素被引用为模型。模型对象对`UI`完全不了解。开始讨论我们的评估例子的`UI`之前，我们把模型看做是我们所关注数值字段的读数。（正如我们将要看到的列表框使什么是模型的这个问题更加复杂，但我们稍微忽略一下列表框。）
+
